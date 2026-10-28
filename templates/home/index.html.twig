@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}BOA TECH — Votre partenaire en technologie et solutions numériques{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('build/app.css') }}">
+{% endblock %}
+
+{% block javascripts %}
+    <script type="module" src="{{ asset('build/app.js') }}"></script>
+{% endblock %}
+
+{% block body %}
+    <div id="root"></div>
+{% endblock %}
