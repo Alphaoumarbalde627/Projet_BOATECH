@@ -11,5 +11,13 @@
 {% endblock %}
 
 {% block body %}
-    <div id="root"></div>
+    <div
+        id="root"
+        data-login-csrf-token="{{ login_csrf_token|default('') }}"
+        data-last-username="{{ last_username|default('') }}"
+        data-login-error="{{ login_error|default(false) ? '1' : '0' }}"
+        data-recaptcha-site-key="{{ recaptcha_site_key|default('') }}"
+        data-user-identifier="{{ user_identifier|default('') }}"
+        data-logout-csrf-token="{{ logout_csrf_token|default('') }}"
+    ></div>
 {% endblock %}
